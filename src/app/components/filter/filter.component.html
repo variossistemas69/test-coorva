@@ -1,0 +1,9 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Clearable input</mat-label>
+    <input matInput type="text" [value]="text" (change)="onChangeInput($event)">
+    <button *ngIf="text" matSuffix mat-icon-button aria-label="Clear" (click)="onChangedText('')">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</form>

@@ -1,0 +1,11 @@
+<p>
+  <mat-card *ngFor="let element of elements" (click)="selectElement(element)">
+    <mat-card-subtitle>
+      {{element.name}} ({{element.id}})
+    </mat-card-subtitle>
+    <mat-card-content>
+      {{element.description}}
+    </mat-card-content>
+  </mat-card>
+
+</p>

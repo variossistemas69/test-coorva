@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-subtitle>
+    <app-filter [text]="filterValue" (textChanged)="filterValueChanged($event)"></app-filter>
+    Filter Elements by Selection
+  </mat-card-subtitle>
+  <mat-card-content>
+    <app-list [elements]="filteredElements" (itemSelected)="itemSelected($event)"></app-list>
+  </mat-card-content>
+</mat-card>
